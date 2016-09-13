@@ -1,0 +1,15 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class EmployeeCollectionTest
+{
+
+	@Test
+	public void test()
+	{
+		
+	}
+}

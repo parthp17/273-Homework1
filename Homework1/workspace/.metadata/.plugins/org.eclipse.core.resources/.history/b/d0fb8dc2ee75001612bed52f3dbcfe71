@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Error</title>
+<script type="text/javascript">
+function validate()
+{
+	
+var status = document.getElementById("status");
+var number = document.getElementById("number");
+try{
+	alert(number.value);
+	if(number.value > 0 && number.value < 1000000000)
+	{
+		status.innerHTML = "valid number";
+	}
+	else
+	{
+		throw "Not a valid number"		
+	}
+}
+catch(err)
+{
+	status.innerHTML = err;
+}
+}
+</script>
+</head>
+<body>
+Enter number<input type = "text" id =  "number" >
+<input type = "button" value ="validate" onclick="validate()">
+<p id = "status"></p>
+</body>
+</html>

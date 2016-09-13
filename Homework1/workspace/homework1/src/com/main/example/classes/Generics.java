@@ -1,0 +1,19 @@
+package com.main.example.classes;
+
+public class Generics <T>
+{
+	T tFlagValue;
+
+	public T gettFlagValue()
+	{
+		return tFlagValue;
+	}
+
+	public void settFlagValue(T tFlagValue)
+	{
+		this.tFlagValue = tFlagValue;
+	}
+	
+	
+
+}

@@ -1,0 +1,43 @@
+package com.main.classes;
+
+import java.util.Queue;
+
+public class QueueTheatre {
+
+	public Queue<String> line;
+	
+	public void addToline(String sName)
+	{
+		if(this.line != null)
+		this.line.add(sName);
+	}
+	
+	public String removeFromLine()
+	{
+		String sPerson = null;
+		if(this.line != null && this.line.size() > 0)
+		{
+			sPerson = this.line.remove();
+			System.out.println("Removing from the line: " + sPerson);
+		}
+		return sPerson;
+	}
+	
+	public String getFirst()
+	{
+		String sPerson = null;
+		if(this.line != null && this.line.size() > 0)
+		{
+			sPerson = this.line.peek();
+		}
+		return sPerson;
+	}
+	
+	public String issueTicket()
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+}

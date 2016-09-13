@@ -1,0 +1,17 @@
+package com.main.example.classesmain;
+
+import java.util.*;
+
+import com.main.example.classes.LivingBeing;
+
+public class GenericsMain
+{
+
+	public static void main(String[] args)
+	{
+		List <LivingBeing> lsLivings = new LinkedList<LivingBeing>();
+		List <LivingBeing> lsAnimals = new LinkedList<LivingBeing>();
+		List <LivingBeing> lsLion = new LinkedList<LivingBeing>();
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.main.example.classesmain;
+
+import java.util.*;
+
+public class GenericsMain
+{
+
+	public static void main(String[] args)
+	{
+		List <LivingBeing> lsLivings = 
+	}
+
+}

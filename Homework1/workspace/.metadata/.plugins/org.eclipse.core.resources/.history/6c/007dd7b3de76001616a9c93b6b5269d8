@@ -1,0 +1,10 @@
+package com.main.example.classesmain;
+
+public class ReverseStringStackMain
+{
+
+	public static void main()
+	{
+		ReverseStringStack objReverseStringStack = new ReverseStringStackMain();
+	}
+}

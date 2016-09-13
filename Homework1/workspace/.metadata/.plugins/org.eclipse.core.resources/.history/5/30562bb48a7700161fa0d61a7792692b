@@ -1,0 +1,13 @@
+package com.test.example.classses;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses(
+{ ArrayMarksTest.class, QueueTheatreTest.class, ReverseStringStackTest.class })
+public class AllTests
+{
+
+}

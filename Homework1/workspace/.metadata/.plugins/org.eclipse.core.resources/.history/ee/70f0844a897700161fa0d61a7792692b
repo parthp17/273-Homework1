@@ -1,0 +1,14 @@
+package com.main.example.classesmain;
+
+import com.main.example.classes.Generics;
+
+public class GenericsMain
+{
+
+	public static void main(String[] args)
+	{
+		Generics<String> g1 = new Generics<String>();
+		Generics<String> g1 = new Generics<Bool>();
+	}
+
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GeoLocation</title>
+</head>
+<body>
+
+Enter city name<input type = "search" name = "googlesearch"><br>
+<input type="button" value ="locate" >
+
+<p id ="data"></p>
+
+</body>
+</html>

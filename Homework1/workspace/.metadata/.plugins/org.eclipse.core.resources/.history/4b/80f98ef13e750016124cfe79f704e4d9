@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Regular Expression</title>
+</head>
+<body>
+<script type="text/javascript">
+function validate()
+{
+	var regex = "/^[a-zA-Z ]{0,25}$/";
+	var fname = document.getElementById("fname");
+	var result = document.getElementById("result");
+	if (regex.test(fname.value)) 
+	{
+		result.value = "valid name";
+		fname.value = "";
+		return true;
+    }
+    else {
+    	result.value = "Invalid name";
+        return false;
+    }
+}
+</script>
+First Name<input type = "text" id = "fname" >
+<input type="button" value ="validate" onclick = "validate()">
+<p id = "result"></p>
+</body>
+</html>

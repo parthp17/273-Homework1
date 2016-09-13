@@ -1,0 +1,12 @@
+package com.main.example.classes;
+
+import java.util.List;
+
+public class Dog extends Animals
+{
+	List<Dog> lsDogs;
+	public String makeSound()
+	{
+		return "bark";
+	}
+}

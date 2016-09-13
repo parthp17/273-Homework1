@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GeoLocation</title>
+</head>
+<body>
+<script type="text/javascript">
+function locate()
+{
+	
+	    if (navigator.geolocation) {
+	        navigator.geolocation.getCurrentPosition(showPosition);
+	    } else {
+	        x.innerHTML = "Geolocation is not supported by this browser.";
+	    }
+	
+}
+</script>
+Enter city name<input type = "search" name = "googlesearch"><br>
+<input type="button" value ="locate" onclick="locate()">
+
+<p id ="data"></p>
+
+</body>
+</html>

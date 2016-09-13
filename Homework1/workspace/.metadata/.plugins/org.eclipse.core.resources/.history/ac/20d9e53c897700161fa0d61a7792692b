@@ -1,0 +1,13 @@
+package com.main.example.classesmain;
+
+import com.main.example.classes.Generics;
+
+public class GenericsMain
+{
+
+	public static void main(String[] args)
+	{
+		Generics<boolean> g1 = new Generics<boolean>();
+	}
+
+}

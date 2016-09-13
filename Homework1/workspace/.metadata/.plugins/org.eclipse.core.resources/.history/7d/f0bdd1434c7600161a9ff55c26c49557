@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Local Storage</title>
+<script type="text/javascript">
+function pageVisited()
+{
+	if(typeof(Storage) !== "undefined") {
+        if (localStorage.pageVisited) {
+            localStorage.pageVisited = Number(localStorage.pageVisited)+1;
+        } else {
+            localStorage.pageVisited = 1;
+        }
+        document.getElementById("page").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } else {
+        document.getElementById("page").innerHTML = "Browser does not support local storage...";
+    }
+}
+</script>
+</head>
+<body onload = "storage()">
+<p id = "page"></p>
+</body>
+</html>

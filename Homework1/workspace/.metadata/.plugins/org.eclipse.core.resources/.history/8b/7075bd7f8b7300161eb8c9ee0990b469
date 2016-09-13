@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Variable</title>
+<script type="text/javascript">
+	var a 
+</script>
+</head>
+<body>
+Enter the Temperature in Fahrenhiet <input type = >
+</body>
+</html>

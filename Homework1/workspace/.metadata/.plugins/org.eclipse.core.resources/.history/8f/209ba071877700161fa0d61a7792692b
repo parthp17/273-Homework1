@@ -1,0 +1,17 @@
+package com.main.example.classes;
+
+public abstract class LivingBeing
+{
+	private int nYearsLived;
+	private List<? extends LivingBeing> ls;
+	public int getnYearsLived()
+	{
+		return nYearsLived;
+	}
+
+	public void setnYearsLived(int nYearsLived)
+	{
+		this.nYearsLived = nYearsLived;
+	}
+
+}

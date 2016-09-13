@@ -1,0 +1,25 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.main.example.classes.Generics;
+
+public class GenericsTest
+{
+	Generics<String> g1;
+	Generics<Integer> g2;
+	@BeforeClass
+	public void Load()
+	{
+		
+	}
+	@Test
+	public void test()
+	{
+		fail("Not yet implemented");
+	}
+
+}

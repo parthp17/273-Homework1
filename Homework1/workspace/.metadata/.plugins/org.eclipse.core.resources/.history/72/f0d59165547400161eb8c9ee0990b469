@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Object</title>
+<script type="text/javascript">
+var objPlayer1,objPlayer2; 
+var turn = 1;
+function init()
+{
+	objPlayer1 = new Player("abc","1",0);
+	objPlayer2 = new Player("xyz","2",0);
+	alert("HI");
+	var name1 = document.getElementById("name1");
+	name1.value = objPlayer1.name;
+	var name2 = document.getElementById("name2");
+	name2.value = objPlayer2.name;
+	alert("HI");
+	var position1 = document.getElementById("position1");
+	position1.value = objPlayer1.position;
+	var position2 = document.getElementById("position2");
+	position2.value = objPlayer2.position;
+}
+
+function Player(name, id, position)
+{
+	this.name = name;
+	this.position = position;
+	this.id = id;
+}
+
+function random()
+{
+	var x = Math.floor((Math.random() * ) + 1);
+	if(turn == 1)
+		{
+		objPlayer1.position += x;
+		position1.value = objPlayer1.position;
+		turn = 2;
+		}
+	else{
+		objPlayer2.position += x;
+		position1.value = objPlayer1.position;
+		turn = 1;
+	}
+}
+
+
+</script>
+</head>
+<body onload = "init()">
+player1 <input type = "text" name = "name1" id = "name1" disabled>
+Position<input type = "text" name = "positon1" id = "position1" disabled>
+player2 <input type = "text" name = "name2" id = "name2" disabled>
+Position<input type = "text" name = "positon2" id = "position2" disabled>
+<input type="button" value="Generate" onclick="random()" id="b">
+</body>
+</html>

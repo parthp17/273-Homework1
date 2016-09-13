@@ -1,0 +1,18 @@
+package com.main.example.classes;
+
+public abstract class Animals extends LivingBeing
+{
+	public String getsFood()
+	{
+		return sFood;
+	}
+
+	public void setsFood(String sFood)
+	{
+		this.sFood = sFood;
+	}
+
+	private String sFood;
+	private
+	public abstract String makeSound();
+}

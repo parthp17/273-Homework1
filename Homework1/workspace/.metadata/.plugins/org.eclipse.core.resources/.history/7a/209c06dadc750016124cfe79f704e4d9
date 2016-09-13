@@ -1,0 +1,17 @@
+"use strict";
+
+function Employee(empid)
+{
+	this.empid = empid;
+}
+
+
+function initialize()
+{
+
+//Employee.prototype = new Person("Parth", "Pandya", "M");
+alert("Hi");
+var objEmployee1 = new Employee(71);
+Object.preventExtensions(objEmployee1);
+objEmployee.DOB = 05131992;
+}

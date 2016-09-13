@@ -1,0 +1,20 @@
+package com.main.example.classesmain;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.main.example.classes.*;
+
+import com.main.example.classes.Employee;
+
+public class EmployeeSortMain
+{
+	public static void main(String[] args)
+	{
+		List<Employee> lsEmployee  = new ArrayList<Employee>();
+		lsEmployee.add(new Employee("Parth",new Integer(1)));
+		lsEmployee.add(new Employee("Ishan",new Integer(2)));
+		lsEmployee.add(new Employee("Kemy",new Integer(3)));
+		lsEmployee.add(new Employee("Chubby",new Integer(4)));
+		EmployeeSortById objEmployeeSortById = new EmployeeSortById();
+	}
+}

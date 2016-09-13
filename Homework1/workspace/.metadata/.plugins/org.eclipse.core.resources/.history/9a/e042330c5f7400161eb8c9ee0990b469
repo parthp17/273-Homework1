@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Function</title>
+<script type="text/javascript">
+
+function random()
+{
+	Math.floor((Math.random() * 6) + 1);
+}
+</script>
+</head>
+<body>
+<input type = "button" value = "random" id = "random" action = "random()">
+</body>
+</html>

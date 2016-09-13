@@ -1,0 +1,60 @@
+<html>
+<head>
+<script>
+	var param;
+	function f1() {
+		
+		var t = document.getElementById("t1");
+		var fn = document.getElementById("fn");
+		var ln = document.getElementById("ln");
+		var id = document.getElementById("id");
+		t.style.display = "";
+		
+			var row = t.insertRow(-1);
+			row.style.height = "50";
+			var cell = row.insertCell(0);
+			var cell1 = row.insertCell(1);
+			var cell2 = row.insertCell(2);
+			
+			var objaddPerson = new person(fn.value,ln.value, id.value);
+			cell.innerHTML = objaddPerson.firstname;
+			cell1.innerHTML = objaddPerson.lastname;
+			cell2.innerHTML = objaddPerson.id;
+		
+		fn.value = "";
+		ln.value = "";
+		id.value = "";
+		
+	}
+	function person(fname, lname, id)
+	{
+		this.firstname = fname;
+		this.lastname = lname;
+		this.id = id;
+	}
+	
+	function del(x) {
+		var t = document.getElementById("t1");
+		var row = x.parentNode.parentNode;
+		t.deleteRow(row.rowIndex);
+	}
+</script>
+</head>
+<body>
+	First name
+	<input type="text" name="fn" id="fn"> Last name
+	<input type="text" name="ln" id="ln"> Student Id
+	<input type="text" name="id" id="id">
+	<input type="button" value="add" onclick="f1()" id="b">
+	<table width="500" border="1" align="center" id="t1"
+		style="display: none">
+		<tr height="50">
+			<td width="150" id="">First Name
+			<td width="150">Last Name
+			<td width="150">Student Id
+			</td>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

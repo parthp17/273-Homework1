@@ -1,0 +1,6 @@
+package com.main.example.classes;
+
+public class Dog extends Animals
+{
+	public String makeSound
+}

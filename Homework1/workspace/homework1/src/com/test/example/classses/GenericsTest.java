@@ -1,0 +1,37 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import java.awt.Window.Type;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.main.example.classes.Generics;
+
+public class GenericsTest
+{
+	static Generics<String> g1;
+	static Generics<Integer> g2;
+
+	@BeforeClass
+	public static void load()
+	{
+		g1 = new Generics<String>();
+		g1.settFlagValue("NA");
+		g2 = new Generics<Integer>();
+		g2.settFlagValue(1);
+	}
+
+	@Test
+	public void testString()
+	{
+		assertTrue(g1.gettFlagValue().equals("NA"));
+	}
+
+	@Test
+	public void testInt()
+	{
+		assertFalse(g2.gettFlagValue().equals(0));
+	}
+}

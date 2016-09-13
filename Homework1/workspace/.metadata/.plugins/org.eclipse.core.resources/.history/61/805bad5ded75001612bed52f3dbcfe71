@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Error</title>
+<script type="text/javascript">
+fucntion validate()
+{
+	alert();
+var status = document.getElementById("status");
+var number = document.getElementById("number");
+try{
+	if(number.value % 2 != 0)
+	{
+		throw "Not divisible by 2";
+	}
+	else
+	{
+		status.value = "Divisible by 2";		
+	}
+}
+catch(err)
+{
+	status.innerHTML = err;	
+}
+}
+</script>
+</head>
+<body>
+Enter password<input type = "text" id =  "number" onchange="validate()">
+<p id = "status"></p>
+</body>
+</html>

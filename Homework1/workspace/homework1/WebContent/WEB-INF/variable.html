@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Variable</title>
+<script type="text/javascript">
+	function convert()
+	{
+		var t = document.getElementById("txtTemp1").value;
+		t = (t-32)*5/9;
+		alert(t);
+	}
+</script>
+</head>
+<body>
+Enter the Temperature in Fahrenhiet <input type = "text" name = "temperature" id = "txtTemp1">
+<input type = "button" value = "convert" onclick = "convert()" id = "bConvert1">
+</body>
+</html>

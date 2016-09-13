@@ -1,0 +1,25 @@
+package com.main.example.classesmain;
+
+public class MultithreadedDateTimeServerMain
+{
+
+	public static void main(String[] args)
+	{
+		int port = Integer.parseInt(args[0]);
+		MultithreadedDateTimeServer.ssocMasterSocket = new ServerSocket(port);
+		try
+		{
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}finally
+		{
+			
+		}
+
+
+	}
+
+}

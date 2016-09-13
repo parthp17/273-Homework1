@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function f1(x,y)
+{
+var b11 = document.getElementById("b1");
+var b21 = document.getElementById("b2");
+b11.value=x;
+b21.value=y;
+}
+function f2()
+{
+alert("oh.. u r mad indeed..!! :p");
+}
+</script>
+</head>
+<body>
+are you mad..?
+<input type="button" value = "yes" id = "b1" onmouseover="f1('yes','no')" onclick="f2()">
+<input type="button" value = "no" id = "b2" onmouseover="f1('no','yes')" onclick="f2()">
+</body>
+</html>

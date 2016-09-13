@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Regular Expression</title>
+</head>
+<body>
+First Name<input type = "text" id = "fname">
+</body>
+</html>

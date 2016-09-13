@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSON</title>
+<script type="text/javascript">
+
+function getCar(){
+	
+	var status = document.getElementById("status");
+var json = '{ "car" : [' +
+'{ "company":"Audi" , "model":"R8" },' +
+'{ "company":"Toyota" , "model":"Corolla" },' +
+'{ "compnay":"Honda" , "model":"Civic" } ]}';
+
+var array = JSON.parse(json);
+
+for(var car in array)
+	{
+	for var (var attr in car)
+	{
+		status.innerHTML += 
+	}
+	}
+
+}
+</script>
+</head>
+<body>
+<input type = "button" value ="get car" onclick="getCar()">
+<p id = "status"></p>
+
+</body>
+</html>

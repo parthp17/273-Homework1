@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSON</title>
+<script type="text/javascript">
+
+function
+var jsontext = '{ "car" : [' +
+'{ "company":"Audi" , "model":"R8" },' +
+'{ "company":"Toyota" , "model":"Corolla" },' +
+'{ "compnay":"Honda" , "model":"Civic" } ]}';
+
+var 
+</script>
+</head>
+<body>
+
+</body>
+</html>

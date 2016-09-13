@@ -1,0 +1,9 @@
+package com.main.example.classes;
+
+public class Lion extends Animals
+{
+	public String makeSound()
+	{
+		return "roar";
+	}
+}

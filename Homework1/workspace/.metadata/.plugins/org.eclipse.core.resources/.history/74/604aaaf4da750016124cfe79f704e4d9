@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Strict</title>
+<script type="text/javascript" src = "WebContent/strict.js"></script>
+</head>
+<body onload = "init()">
+
+</body>
+</html>

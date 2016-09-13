@@ -1,0 +1,31 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.main.example.classes.Employee;
+
+public class EmployeeCollectionTest
+{
+	
+	@BeforeClass
+	public static void Load()
+	{
+		List<Employee> lsEmployee  = new ArrayList<Employee>();
+		lsEmployee.add(new Employee("Parth",new Integer(1)));
+		lsEmployee.add(new Employee("Ishan",new Integer(4)));
+		lsEmployee.add(new Employee("Kemy",new Integer(2)));
+		lsEmployee.add(new Employee("Chubby",new Integer(3)));
+	}
+	
+	@Test
+	public void test()
+	{
+		
+	}
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GenericsTest" project="homework1" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.test.example.classses.GenericsTest" time="0.001">
+    <testcase name="testInt" classname="com.test.example.classses.GenericsTest" time="0.0"/>
+    <testcase name="testString" classname="com.test.example.classses.GenericsTest" time="0.0"/>
+  </testsuite>
+</testrun>

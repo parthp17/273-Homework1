@@ -1,0 +1,20 @@
+package com.main.example.classes;
+
+import java.util.List;
+
+public abstract class Animals extends LivingBeing
+{
+	public String getsFood()
+	{
+		return sFood;
+	}
+
+	public void setsFood(String sFood)
+	{
+		this.sFood = sFood;
+	}
+
+	private String sFood;
+	public List<Animals> lsAnimals;
+	public abstract String makeSound();
+}

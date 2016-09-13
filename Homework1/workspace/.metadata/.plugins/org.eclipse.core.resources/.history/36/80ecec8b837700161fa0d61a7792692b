@@ -1,0 +1,17 @@
+package com.main.example.classes;
+
+public aabstract class LivingBeing
+{
+	private int nYearsLived;
+
+	public int getnYearsLived()
+	{
+		return nYearsLived;
+	}
+
+	public void setnYearsLived(int nYearsLived)
+	{
+		this.nYearsLived = nYearsLived;
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.main.example.classes;
+
+public class Generics <T>
+{
+	T tFlagValue;
+	T sLastname;
+
+}

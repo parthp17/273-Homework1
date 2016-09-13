@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Music & Video</title>
+</head>
+<body>
+<video width="320" height="240" controls>
+  <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+</video>
+
+<audio controls>
+  <source src="https://ia902508.us.archive.org/5/items/testmp3testfile/mpthreetest.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>

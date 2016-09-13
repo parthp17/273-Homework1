@@ -1,0 +1,52 @@
+package com.main.example.classes;
+
+import java.io.*;
+import java.net.*;
+import java.util.Date;
+
+public class MultithreadedDateTimeServer implements Runnable
+{
+	public static ServerSocket ssocMasterSocket;
+	private Socket socChildsocket;
+	private DataOutputStream dos;
+	private DataInputStream dis;
+	private static int nRequestCount;
+
+	public static int getnRequestCount()
+	{
+		return nRequestCount;
+	}
+
+	public static void setnRequestCount(int nRequestCount)
+	{
+		MultithreadedDateTimeServer.nRequestCount = nRequestCount;
+	}
+
+	public MultithreadedDateTimeServer(Socket childSocket)
+	{
+		this.socChildsocket = childSocket;
+	}
+
+	public void run()
+	{
+		System.out.println("connected to " + this.socChildsocket.getInetAddress());
+		try
+		{
+			String DateTme = new Date().toString();
+			this.dos = new DataOutputStream(socChildsocket.getOutputStream());
+			this.dos.writeBytes(DateTme);
+			System.out.println("Time sent: " +DateTme);
+			this.doIncrementRequestCount();
+			socChildsocket.close();
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	private synchronized void doIncrementRequestCount()
+	{
+		nRequestCount++;
+		System.out.println("Number of request serviced: " + nRequestCount);
+	}
+}

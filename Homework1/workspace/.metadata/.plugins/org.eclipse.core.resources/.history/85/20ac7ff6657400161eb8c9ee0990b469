@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Array</title>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+Enter the readings <input type = "text" name = "temperature" id = "txtTemp1">
+</body>
+</html>

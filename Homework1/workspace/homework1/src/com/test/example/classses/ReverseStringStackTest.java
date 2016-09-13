@@ -1,0 +1,21 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import java.util.Stack;
+
+import org.junit.Test;
+
+import com.main.example.classes.ReverseStringStack;
+
+public class ReverseStringStackTest
+{
+	@Test
+	public void testReverseString()
+	{
+		ReverseStringStack objReverseStringStack = new ReverseStringStack();
+		objReverseStringStack.setObjStack(new Stack<String>());
+		assertEquals(null, objReverseStringStack.reverseString(null));
+		assertEquals("htrap",objReverseStringStack.reverseString("parth"));
+	}
+}

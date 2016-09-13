@@ -1,0 +1,10 @@
+package com.main.example.classes;
+
+public class Dog extends Animals
+{
+	List<Dog> lsDogs
+	public String makeSound()
+	{
+		return "bark";
+	}
+}

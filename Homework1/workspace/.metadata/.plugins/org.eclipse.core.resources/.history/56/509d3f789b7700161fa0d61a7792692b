@@ -1,0 +1,36 @@
+package com.main.example.classes;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Employee
+{
+	String sFirstName;
+	int nEmployeeId;
+	public Employee(String sFirstName, int nId)
+	{
+		this.nEmployeeId = nId;
+		this.sFirstName = sFirstName;
+	}
+}
+
+class EmployeeSortById implements Comparator<Employee>
+{
+	@Override
+	public int compare(Employee emp1, Employee emp2)
+	{
+		return emp1.nEmployeeId.compareTo(emp2.nEmployeeId);
+	}	
+}
+
+class EmployeeSortByName implements Comparator<Employee>
+{
+
+	@Override
+	public int compare(Employee emp1, Employee emp2)
+	{
+		return emp1.sFirstName.compareTo(emp2.sFirstName);
+	
+	}
+}

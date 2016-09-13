@@ -1,0 +1,54 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import java.util.LinkedList;
+
+import org.junit.Test;
+
+import com.main.example.classes.QueueTheatre;
+
+public class QueueTheatreTest
+{
+	
+	@Test
+	public void testAddToline()
+	{
+		QueueTheatre obj = new QueueTheatre();
+		obj.setLine(new LinkedList<String>());
+		assertEquals(null, obj.getLine().peek());
+		obj.addToline("parth");
+		assertEquals("parth", obj.getLine().peek());
+	}
+	
+	@Test
+	public void testRemoveFromLine()
+	{
+		QueueTheatre obj = new QueueTheatre();
+		obj.setLine(new LinkedList<String>());
+		assertEquals(null, obj.removeFromLine());
+		obj.addToline("parth");
+		assertEquals("parth", obj.removeFromLine());
+	}
+	
+	@Test
+	public void testGetFirst()
+	{
+		QueueTheatre obj = new QueueTheatre();
+		obj.setLine(new LinkedList<String>());
+		assertEquals(null, obj.getFirst());
+		obj.addToline("parth");
+		assertEquals("parth", obj.getFirst());
+	}
+	
+	@Test
+	public void testIssueTicket()
+	{
+		QueueTheatre obj = new QueueTheatre();
+		obj.setLine(new LinkedList<String>());
+		assertEquals(null, obj.issueTicket());
+		obj.addToline("parth");
+		assertEquals("parth", obj.issueTicket());
+	}
+
+}

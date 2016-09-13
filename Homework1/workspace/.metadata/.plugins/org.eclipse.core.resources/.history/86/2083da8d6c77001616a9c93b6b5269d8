@@ -1,0 +1,26 @@
+package com.main.example.classesmain;
+
+import java.net.ServerSocket;
+
+import com.main.example.classes.MultithreadedDateTimeServer;
+
+public class MultithreadedDateTimeServerMain
+{
+
+	public static void main(String[] args)
+	{
+		int port = Integer.parseInt(args[0]);
+		try
+		{
+			MultithreadedDateTimeServer.ssocMasterSocket = new ServerSocket(port);
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+
+
+	}
+
+}

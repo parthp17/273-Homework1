@@ -1,0 +1,8 @@
+package com.main.example.interfaces;
+
+public interface Service
+{
+void parseInput();
+void executeService();
+void generateOutput();
+}

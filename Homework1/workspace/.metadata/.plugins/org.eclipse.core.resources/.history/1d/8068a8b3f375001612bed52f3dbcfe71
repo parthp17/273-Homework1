@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JSON</title>
+<script type="text/javascript">
+
+var jsontext = '{ "car" : [' +
+'{ "company":"red" , "model":"Doe" },' +
+'{ "company":"Anna" , "model":"Smith" },' +
+'{ "compnay":"Peter" , "model":"Jones" } ]}';
+</script>
+</head>
+<body>
+
+</body>
+</html>

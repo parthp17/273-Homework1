@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Variable</title>
+<script type="text/javascript">
+	var a 
+</script>
+</head>
+<body>
+Enter the Temperature in Fahrenhiet <input type = "text" name = "temperature" id = "text1">
+<input type = "button" value = "convert" onclick = "convert()" id = "button1">
+</body>
+</html>

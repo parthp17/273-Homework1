@@ -1,0 +1,11 @@
+package com.main.example.classesmain;
+
+import com.main.example.classes.ArrayMarks;
+
+public class ArrayMarksMain
+{
+	
+	ArrayMarks objArrayMarks = new ArrayMarks();
+	objArrayMarks. 
+
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Local Storage</title>
+<script type="text/javascript">
+function storage()
+{
+var name = document.getElementById("name");
+name.value = localStorage.getItem('name');
+}
+</script>
+</head>
+<body onload = "storage()">
+Name<input type = "text" id = "name">
+Id<input type = "text" id = "id">
+</body>
+</html>

@@ -1,0 +1,36 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import java.util.LinkedList;
+
+import org.junit.Test;
+
+import com.main.example.classes.QueueTheatre;
+
+public class QueueTheatreTest
+{
+	static QueueTheatre obj = new QueueTheatre();
+	@Test
+	public void testAddToline()
+	{
+		obj.setLine(new LinkedList<String>());
+		assertEquals(null, obj.getLine().peek());
+		obj.addToline("parth");
+		assertEquals("parth", obj.getLine().peek());
+	}
+	
+	@Test
+	public void testRemoveFromLine()
+	{
+		
+		
+	}
+	
+	@Test
+	public void testGetFirst()
+	{
+		
+	}
+
+}

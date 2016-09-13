@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Conditions</title>
+</head>
+<body>
+<script type="text/javascript">
+function result()
+{
+	var marks = document.getElementById("marks");
+	var result = document.getElementById("result");
+	if(marks > 95)
+		{
+			result.innerHTML = "A+";
+		}
+	else if(marks <= 95 && marks > 89)
+		{
+			result.innerHTML = "A";
+		}
+	else if (marks <= 89 && marks > 79)
+		{
+			result.innerHTML = "B";
+		}
+	else if(marks <=79  && marks > 70)
+		{
+		result.innerHTML = "B";
+		}
+	else if (marks <=70  && marks > 65)
+		{
+		result.innerHTML = "C";
+		}
+	else
+		{
+		result.innerHTML = "F";
+		}
+}
+</script>
+Enter marks<input type = "text" id = "marks">
+<p id = "resuult"></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+function Employee(empid)
+{
+	this.empid = empid;
+}
+
+
+function initialize()
+{
+
+//Employee.prototype = new Person("Parth", "Pandya", "M");
+alert("Hi");
+var objEmployee1 = new Employee(71);
+Object.defineProperty(objEmployee1,);
+alert(objEmployee.DOB);
+var valid = document.getElementById("valid");
+valid.value = objEmployee.DOB;
+}

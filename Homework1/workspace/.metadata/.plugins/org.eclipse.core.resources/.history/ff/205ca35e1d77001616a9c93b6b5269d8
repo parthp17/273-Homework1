@@ -1,0 +1,48 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import java.util.Iterator;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.main.example.classes.CSVServiceImpl;
+
+public class CSVServiceImplTest
+{
+	static CSVServiceImpl objCSVServiceImpl;
+	static String[] sData = { "parth,pandya" };
+	@BeforeClass
+	public static void Load()
+	{
+		objCSVServiceImpl = new CSVServiceImpl();
+		 
+	}
+
+	@Test
+	public void testParseInput()
+	{
+		String[] sTemp = {"parth","pandya"};
+		objCSVServiceImpl.parseInput(sData);
+		Iterator<String[]> i = objCSVServiceImpl.getLsCSVData().iterator();
+		String[] sResult = i.next();
+		assertEquals(sTemp, sResult);
+	}
+
+	@Test
+	public void testExecuteService()
+	{
+		objCSVServiceImpl.executeService();
+		Iterator<String> i = objCSVServiceImpl.getLsOutput().iterator();
+		String sResult = i.next();
+		assertEquals("PARTH-PANDYA", sResult);
+	}
+
+	@Test
+	public void testGenerateOutput()
+	{
+		fail("Not yet implemented");
+	}
+
+}

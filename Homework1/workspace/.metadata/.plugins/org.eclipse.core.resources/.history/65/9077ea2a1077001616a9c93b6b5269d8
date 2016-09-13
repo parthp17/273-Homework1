@@ -1,0 +1,8 @@
+package com.main.example.classes;
+
+public interface Service
+{
+
+void executeService();
+void 
+}

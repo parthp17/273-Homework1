@@ -1,0 +1,33 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.main.example.classes.QueueTheatre;
+
+public class QueueTheatreTest
+{
+
+	@Test
+	public void testAddToline()
+	{
+		QueueTheatre obj = new QueueTheatre();
+		obj.addToline("parth");
+		
+		
+	}
+	
+	@Test
+	public void testRemoveFromLine()
+	{
+		
+	}
+	
+	@Test
+	public void testGetFirst()
+	{
+		
+	}
+
+}

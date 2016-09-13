@@ -1,0 +1,36 @@
+package com.main.example.classes;
+
+public class ArrayMarks
+{
+
+	private int nMarks[];
+
+	public int[] getnMarks()
+	{
+		return nMarks;
+	}
+
+	public void setnMarks(int[] nMarks)
+	{
+		this.nMarks = nMarks;
+	}
+
+	public void getTotal()
+	{
+		int nSum = 0;
+		for (int i = 0; i < this.nMarks.length ; i++)
+		{
+			nSum += this.nMarks[i];
+		}
+	}
+	public int getHighest()
+	{
+		int nHighest;
+		for(int i = 0 ; i < this.nMarks.length-1; i++)
+		{
+			(nMarks[i] > nMarks[i+1])? nHighest = nMarks[i]:nHighest = nMarks[i+1];
+		}
+		
+	}
+
+}

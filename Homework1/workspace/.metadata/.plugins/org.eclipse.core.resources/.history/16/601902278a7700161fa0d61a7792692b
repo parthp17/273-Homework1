@@ -1,0 +1,28 @@
+package com.test.example.classses;
+
+import static org.junit.Assert.*;
+
+import java.awt.Window.Type;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.main.example.classes.Generics;
+
+public class GenericsTest
+{
+	Generics<String> g1;
+	Generics<Integer> g2;
+	@BeforeClass
+	public void load()
+	{
+		 g1 = new Generics<String>();
+		 g2 = new Generics<Integer>();
+	}
+	@Test
+	public void test()
+	{
+		assertTrue(condition);;
+	}
+
+}

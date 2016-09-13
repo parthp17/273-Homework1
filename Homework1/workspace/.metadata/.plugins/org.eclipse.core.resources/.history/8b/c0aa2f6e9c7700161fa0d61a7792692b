@@ -1,0 +1,14 @@
+package com.main.example;
+
+import java.util.Comparator;
+
+import com.main.example.classes.Employee;
+
+public class EmployeeSortById implements Comparator<Employee>
+{
+	@Override
+	public int compare(Employee emp1, Employee emp2)
+	{
+		return emp1.nEmployeeId.compareTo(emp2.nEmployeeId);
+	}	
+}

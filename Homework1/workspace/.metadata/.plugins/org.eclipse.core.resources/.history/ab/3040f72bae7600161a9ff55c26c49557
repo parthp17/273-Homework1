@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GeoLocation</title>
+</head>
+<body>
+<script type="text/javascript">
+function locate()
+{
+	navigator.geolocation.watchPosition(displayPosition);
+}
+function showPosition(userposition)
+{
+	document.getElementById("data1").innerHTML="Longitude: "+userposition.coords.latitude+"<br>Latitude: "+userposition.coords.latitude+"<br>Accuracy?"+userposition.coords.accuracy+"<br>speed"+userposition.coords.speed;
+	var mix=userposition.coords.latitude+","+userposition.coords.longitude;
+	var image = "http://maps.googleapis.com/maps/api/staticmap?center="
+	    +mix+"&zoom=14&size=400x300&sensor=false";
+	    document.getElementById("demo1").innerHTML = "<img src='"+image+"'>";
+}
+
+</script>
+Enter city name<input type = "search" name = "googlesearch"><br>
+<input type="button" value ="locate" onclick="locate()">
+
+<p id ="data1"></p>
+<p id ="data2"></p>
+
+</body>
+</html>

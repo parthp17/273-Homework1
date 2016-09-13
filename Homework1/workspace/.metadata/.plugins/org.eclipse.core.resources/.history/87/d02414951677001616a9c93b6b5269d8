@@ -1,0 +1,63 @@
+package com.main.example.classes;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import com.main.example.interfaces.Service;
+
+public class CSVServiceImpl implements Service
+{
+	List<String[]> lsCSVData ;
+	List<String> lsOutput ;
+
+	public  void setLsCSVData(List<String[]> lsCSVData)
+	{
+		this.lsCSVData = lsCSVData;
+	}
+
+	public  List<String[]> getLsCSVData()
+	{
+		return this.lsCSVData;
+	}
+
+	public synchronized void executeService()
+	{
+			if(!lsCSVData.isEmpty() && lsCSVData != null && lsOutput !=null) 
+			{
+				for(String[] sLine : lsCSVData)
+				{
+					StringBuffer sModLine = new StringBuffer();
+					
+					for(String sElement : sLine)
+					{
+						sElement = sElement.toUpperCase();
+						sModLine.append(sElement);sModLine.append('-');
+					}
+					lsOutput.add(sModLine.toString());
+				}
+			}
+	}
+
+	public synchronized void parseInput(String[] sData)
+	{
+		if (sData != null && lsCSVData != null)
+		{
+			for (String sline : sData)
+			{
+				this.lsCSVData.add(sline.split(","));
+			}
+		}
+	}
+
+	public synchronized void generateOutput()
+	{
+		if(!lsCSVData.isEmpty())
+		{
+			for(String sLine : lsCSVData)
+			{
+				 
+				
+			}
+		}
+	}
+}

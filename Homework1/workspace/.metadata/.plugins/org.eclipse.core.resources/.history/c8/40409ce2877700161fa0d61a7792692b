@@ -1,0 +1,20 @@
+package com.main.example.classes;
+
+import java.util.List;
+
+public abstract class LivingBeing
+{
+	private int nYearsLived;
+	public List<LivingBeing> ls;
+	public int getnYearsLived()
+	{
+		return nYearsLived;
+	}
+
+	public void setnYearsLived(int nYearsLived)
+	{
+		this.nYearsLived = nYearsLived;
+	}
+
+	public addlivingBeing()
+}

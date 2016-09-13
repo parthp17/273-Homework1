@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="com.main.example.classesmain.QueueTheatreMain"/>
+<fullyQualifiedTypeName name="com.main.example.classes.QueueTheatre"/>
+<fullyQualifiedTypeName name="com.main.example.classesmain.ReverseStringStackMain"/>
+<fullyQualifiedTypeName name="com.main.example.classes.ReverseStringStack"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.main.example.classes.ArrayMarks"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="com.main.example.interfaces.Service"/>
+<fullyQualifiedTypeName name="com.main.example.classesmain.CSVServiceImplMain"/>
+<fullyQualifiedTypeName name="com.main.example.classes.CSVServiceImpl"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="java.io.DataOutputStream"/>
+<fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="com.main.example.classesmain.MultithreadedDateTimeServerMain"/>
+<fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="com.main.example.classes.MultithreadedDateTimeServer"/>
+<fullyQualifiedTypeName name="java.io.DataInputStream"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.main.example.classes.LivingBeing"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="com.main.example.classesmain.GenericsMain"/>
+<fullyQualifiedTypeName name="com.main.example.classes.Generics"/>
+<fullyQualifiedTypeName name="java.awt.Window.Type"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.main.example.classesmain.ArrayMarksMain"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.main.example.classesmain.EmployeeSortMain"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="com.main.example.classes.Employee"/>
+<fullyQualifiedTypeName name="com.main.example.classes.EmployeeSortById"/>
+</qualifiedTypeNameHistroy>

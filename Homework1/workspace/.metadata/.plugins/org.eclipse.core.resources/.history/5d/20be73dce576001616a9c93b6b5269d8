@@ -1,0 +1,42 @@
+package com.main.example.classes;
+
+import java.util.Stack;
+
+public class ReverseStringStack
+{
+
+	private Stack<String> objStack;
+
+
+	public Stack getObjStack()
+	{
+		return objStack;
+	}
+
+	public void setObjStack(Stack objStack)
+	{
+		this.objStack = objStack;
+	}
+	
+	public String reverseString(String sOriginal)
+	{
+		StringBuilder sbReversedString = new StringBuilder();
+		if(this.objStack != null  && sOriginal != null && sOriginal.length() > 0)
+		{
+			for(int i = 0 ; i < sOriginal.length();i++)
+			{
+			this.objStack.push(sOriginal.substring(i, i+1));	
+			}
+			for(int i = 0 ; i < sOriginal.length();i++)
+			{
+				sbReversedString.append(this.objStack.pop()) ;
+			}
+			return sbReversedString;
+		}
+		else
+		{
+			return null;
+		}
+			
+	}
+}

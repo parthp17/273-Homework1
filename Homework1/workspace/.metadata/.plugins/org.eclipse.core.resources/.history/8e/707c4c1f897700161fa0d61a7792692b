@@ -1,0 +1,12 @@
+package com.main.example.classesmain;
+
+
+public class GenericsMain
+{
+
+	public static void main(String[] args)
+	{
+		Generics g1 = new Generics()
+	}
+
+}

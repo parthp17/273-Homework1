@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+	<form action = "index" method = "post" class = "index">
+	<input type = "text" name = "cardNumber"><%= cardNumber %></input><br>
+	<input type = "text" name = "cvvNumber"><%= cvvNumber %></input><br>
+	<input type = "month" name = "validTillDate"><%= title %></input><br>
+	<input type = "submit" value = "validate" onClick = "index">
+	</form>
+	
+  </body>
+</html>

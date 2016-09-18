@@ -1,0 +1,22 @@
+"use strict";
+var ejs = require("ejs");
+function validate(req, res)
+{
+	console.log(req.param("cardNumber"));
+	console.log(req.param("cvvNumber"));
+	console.log(req.param("validTillDate"));
+	ejs.renderFile('./views/index.ejs', {title:'Express',cardNumber:req.param("cardNumber"),cvvNumber:req.param("cvvNumber"),validTillDate:''},
+	function(err,result)
+	{
+		if(!err)
+		{
+			res.end(result);	
+		}
+		else
+		{
+			res.end("An error occurred.");
+		}
+	});
+}
+
+exports.validate = validate;

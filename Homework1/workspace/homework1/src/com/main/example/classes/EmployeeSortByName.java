@@ -9,6 +9,5 @@ public class EmployeeSortByName implements Comparator<Employee>
 	public int compare(Employee emp1, Employee emp2)
 	{
 		return emp1.sFirstName.compareTo(emp2.sFirstName);
-	
 	}
 }

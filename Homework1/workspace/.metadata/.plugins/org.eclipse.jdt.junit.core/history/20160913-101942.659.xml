@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeCollectionTest" project="homework1" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.test.example.classses.EmployeeCollectionTest" time="0.006">
-    <testcase name="testSortById" classname="com.test.example.classses.EmployeeCollectionTest" time="0.001"/>
-    <testcase name="testSortByName" classname="com.test.example.classses.EmployeeCollectionTest" time="0.005"/>
-  </testsuite>
-</testrun>

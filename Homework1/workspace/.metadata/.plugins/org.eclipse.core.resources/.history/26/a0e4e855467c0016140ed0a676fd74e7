@@ -1,0 +1,64 @@
+"use strict";
+var ejs = require("ejs");
+
+var bValidation = false;
+
+function isValidCardNumber(cardNumber)
+{
+	return bValidation;
+}
+
+function isValidCvvNumber(cvvNumber)
+{
+	var regex = /^[a-zA-Z ]{0,25}$/;
+	if(regexTest(regex,))
+	return bValidation;
+}
+
+function isTillDateValid(validTillMonth,validTillYear)
+{
+	var currentDate = new Date();
+	if(validTillYear >= currentDate.getFullYear() && validTillMonth > currentDate.getMonth())
+	{
+		bValidation = true;
+	}
+	return bValidation;	
+}
+
+
+
+function validate(req, res)
+{
+	var cardNumber = req.param("cardNumber");
+	var cvvNumber = req.param("cvvNumber");
+	var validTillMonth = req.param("validTillMonth");
+	var validTillYear = req.param("validTillYear");
+	
+	if(isTillDateValid(validTillMonth,validTillYear) && isValidCardNumber(cardNumber) && isValidCvvNumber(cvvNumber))
+	{
+
+	}
+	else
+	{
+		ejs.renderFile('./views/index.ejs', {
+		    title : 'Express',
+		    cardNumber : req.param("cardNumber"),
+		    cvvNumber : req.param("cvvNumber"),
+		    validTillDate : '',
+		    validationResult : 'Validation Result: Failed'
+		}, function(err, result)
+		{
+			if (!err)
+			{
+				res.end(result);
+			}
+			else
+			{
+				res.end("An error occurred.");
+			}
+		});
+	}
+}
+
+
+exports.validate = validate;

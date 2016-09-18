@@ -1,0 +1,84 @@
+"use strict";
+var ejs = require("ejs");
+
+function CreditCard(cardNumber,cvvNumber,validTillMonth, validTillYear)
+{
+	this.cardNumber = cardNumber;
+	this.cvvNumber =cvvNumber;
+	this.validTillMonth = validTillMonth;
+	this.validTillYear = validTillYear;
+}
+
+function regexTest(regex, value)
+{
+	if (regex.test(value))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function isValidCardNumber(objCreditCard)
+{
+	var regex = /^[0-9]{14}{16}$/;
+	return regexTest(regex,objCreditCard.cardNumber);
+}
+
+function isValidCvvNumber(objCreditCard)
+{
+	var regex = /^[0-9]{3,4}$/;
+	return regexTest(regex, objCreditCard.cvvNumber);
+}
+
+
+
+function isTillDateValid(objCreditCard)
+{
+	var currentDate = new Date();
+	
+	if (objCreditCard.validTillYear >= currentDate.getFullYear() && 
+			objCreditCard.validTillMonth > currentDate.getMonth())
+	{
+		return true;
+	}
+	else
+	{
+		return false;	
+	}
+}
+
+function validate(req, res)
+{
+	var objCreditCard = new CreditCard(req.param("cardNumber"),req.param("cvvNumber"),req.param("validTillMonth"), req.param("validTillYear"));
+
+	if (isTillDateValid(objCreditCard)
+	        && isValidCardNumber(objCreditCard) && isValidCvvNumber(objCreditCard))
+	{
+
+	}
+	else
+	{
+		ejs.renderFile('./views/index.ejs', {
+		    title : 'Express',
+		    cardNumber : req.param("cardNumber"),
+		    cvvNumber : req.param("cvvNumber"),
+		    validTillDate : '',
+		    validationResult : 'Validation Result: Failed'
+		}, function(err, result)
+		{
+			if (!err)
+			{
+				res.end(result);
+			}
+			else
+			{
+				res.end("An error occurred.");
+			}
+		});
+	}
+}
+
+exports.validate = validate;

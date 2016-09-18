@@ -14,14 +14,12 @@ public class MultithreadedDateTimeServerMain
 		try
 		{
 			MultithreadedDateTimeServer.ssocMasterSocket = new ServerSocket(nPort);
-			//System.out.println("Server running at " + nPort);
+			System.out.println("Server running at " + nPort);
 			while(true)
 			{
 				Socket socTemp = MultithreadedDateTimeServer.ssocMasterSocket.accept();
 				MultithreadedDateTimeServer clientthread = new MultithreadedDateTimeServer(socTemp);
-				new Thread(clientthread).start();
-				
-				System.out.println(MultithreadedDateTimeServer.getnRequestCount());
+				new Thread(clientthread).start();	
 			}
 		}
 		catch(Exception e)

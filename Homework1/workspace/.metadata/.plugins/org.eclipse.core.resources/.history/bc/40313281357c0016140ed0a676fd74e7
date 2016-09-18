@@ -1,0 +1,17 @@
+/*
+ * GET home page.
+ */
+
+function index(req, res)
+{
+	res.render('index', 
+	{
+		title : 'Express',
+		cardNumber : '' ,
+		cvvNumber : '',
+		validTillDate : '',
+		validationResult:''
+	});
+}
+
+exports.index = index;

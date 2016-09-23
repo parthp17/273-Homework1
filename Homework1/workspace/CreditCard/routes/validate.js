@@ -114,8 +114,8 @@ function validate(req, res)
 		    title : 'Express',
 		    cardNumber : req.param("cardNumber"),
 		    cvvNumber : req.param("cvvNumber"),
-		    validTillMonth : 'req.param("validTillMonth")',
-		    validTillYear : 'req.param("validTillYear")',
+		    validTillMonth : '',
+		    validTillYear : '',
 		    validationResult : 'Validation Result: Failed'
 		}, function(err, result)
 		{
